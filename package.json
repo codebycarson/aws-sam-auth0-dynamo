@@ -8,9 +8,12 @@
   "scripts": {
     "build": "npm run build --workspace=packages/auth && npm run build --workspace=packages/db && npm run build --workspace=packages/api",
     "dev": "npm run dev --workspace=packages/api",
+    "dev:bun": "npm run dev:bun --workspace=packages/api",
     "start": "npm run start --workspace=packages/api",
+    "start:bun": "npm run start:bun --workspace=packages/api",
     "db:migrate": "npm run migrate --workspace=packages/db",
-    "db:seed": "npm run seed --workspace=packages/db"
+    "db:seed": "npm run seed --workspace=packages/db",
+    "verify": "node scripts/verify-setup.mjs"
   },
   "devDependencies": {
     "bun-types": "latest",

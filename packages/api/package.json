@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch --loader ts-node/esm src/index.ts",
-    "dev:bun": "bun --watch src/index.ts",
+    "dev:bun": "bun --watch src/index.bun.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "start:bun": "bun run dist/index.js"
+    "start:bun": "bun run src/index.bun.ts"
   },
   "dependencies": {
     "@aws-sam-auth0-dynamo/auth": "file:../auth",
