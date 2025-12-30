@@ -1,0 +1,22 @@
+{
+  "name": "@aws-sam-auth0-dynamo/db",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "migrate": "node --loader ts-node/esm src/migrations/run.ts",
+    "seed": "node --loader ts-node/esm src/seed.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "bun-types": "latest",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

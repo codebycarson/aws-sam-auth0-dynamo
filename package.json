@@ -1,0 +1,20 @@
+{
+  "name": "aws-sam-auth0-dynamo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=packages/auth && npm run build --workspace=packages/db && npm run build --workspace=packages/api",
+    "dev": "npm run dev --workspace=packages/api",
+    "start": "npm run start --workspace=packages/api",
+    "db:migrate": "npm run migrate --workspace=packages/db",
+    "db:seed": "npm run seed --workspace=packages/db"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6"
+  }
+}

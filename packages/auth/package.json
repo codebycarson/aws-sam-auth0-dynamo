@@ -1,0 +1,20 @@
+{
+  "name": "@aws-sam-auth0-dynamo/auth",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "jose": "^5.2.0",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "bun-types": "latest",
+    "typescript": "^5.3.3"
+  }
+}

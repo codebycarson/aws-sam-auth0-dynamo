@@ -1,0 +1,12 @@
+[install]
+# Configure the behavior of `bun install`
+production = false
+optional = true
+
+[install.cache]
+# Configure package caching
+dir = ".bun-cache"
+
+[test]
+# Configure test behavior
+preload = ["./setup-tests.ts"]
