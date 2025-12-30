@@ -1,0 +1,25 @@
+{
+  "name": "@aws-sam-auth0-dynamo/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --loader ts-node/esm src/index.ts",
+    "dev:bun": "bun --watch src/index.bun.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:bun": "bun run src/index.bun.ts"
+  },
+  "dependencies": {
+    "@aws-sam-auth0-dynamo/auth": "file:../auth",
+    "@aws-sam-auth0-dynamo/db": "file:../db",
+    "@hono/node-server": "^1.5.0",
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "bun-types": "latest",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
